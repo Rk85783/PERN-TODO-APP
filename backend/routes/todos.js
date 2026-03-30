@@ -41,7 +41,7 @@ router.put("/:id", async (req, res) => {
       return res.status(400).json({ error: "Description is required" });
     }
     const updatedTodo = await pool.query(
-      "UPDATE todo SET description = $1, completed = $2 WHERE todo_id = $3 RETURNING *",
+      "UPDATE todo SET description = $1, completed = $2 WHERE id = $3 RETURNING *",
       [description, completed || false, id]
     );
     if (updatedTodo.rows.length === 0) {
@@ -62,7 +62,7 @@ router.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const deletedTodo = await pool.query(
-      "DELETE FROM todo WHERE todo_id = $1 RETURNING *",
+      "DELETE FROM todo WHERE id = $1 RETURNING *",
       [id]
     );
     if (deletedTodo.rows.length === 0) {
