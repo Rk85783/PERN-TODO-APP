@@ -3,8 +3,6 @@ import cors from "cors";
 import todoRoutes from "./routes/todos.js";
 import dotenv from "dotenv";
 dotenv.config();
-const envFile = `.env.${process.env.NODE_ENV || "development"}`;
-dotenv.config({ path: envFile, override: true });
 
 const PORT = process.env.PORT || 5000;
 
