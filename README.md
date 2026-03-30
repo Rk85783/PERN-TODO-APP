@@ -177,6 +177,12 @@ npm run dev
 
 ---
 
+## 📺 Screenshots
+
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/701d8af5-234f-4dc9-b984-eb489a8586d2" />
+
+---
+
 ## 📌 Conclusion
 
 This project is a great starting point for learning full-stack development using the PERN stack. It covers everything from backend API development to frontend UI design and database management.
