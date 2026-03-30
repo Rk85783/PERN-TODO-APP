@@ -1,7 +1,3 @@
-Here’s a polished, professional README that combines your current content with the reference material and improves clarity, structure, and presentation:
-
----
-
 # 📝 PERN Todo App
 
 A full-stack Todo application built using the **PERN Stack** — PostgreSQL, Express, React, and Node.js. This project demonstrates how to build a modern, scalable web application with complete CRUD functionality and a clean user interface.
